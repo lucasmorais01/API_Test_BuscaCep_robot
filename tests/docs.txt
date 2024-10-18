@@ -1,0 +1,1 @@
+para executar os testes via linha de comando digite: robot -d ./results tests/ConsultaEnderecoApi_testing.robot

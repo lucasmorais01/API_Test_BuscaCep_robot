@@ -1,0 +1,30 @@
+
+CENARIO DE TESTE
+
+Dado que o usuário realiza uma requisição GET à API de consulta de endereço, fornecendo o CEP "91420-270".
+
+Quando a requisição for enviada para a API.
+
+Então a API deve retornar uma resposta com código de status HTTP 200 (OK).
+
+E o corpo da resposta deve conter as seguintes informações corretas:
+
+CEP: "91420-270"
+Logradouro: "Rua São Domingos"
+Complemento: ""
+Unidade: ""
+Bairro: "Bom Jesus"
+Localidade: "Porto Alegre"
+UF: "RS"
+Estado: "Rio Grande do Sul"
+Região: "Sul"
+IBGE: "4314902"
+GIA: ""
+DDD: "51"
+SIAFI: "8801"
+Dados da Requisição:
+Método HTTP: GET
+Endpoint: /api/enderecos/cep/91420-270
+Critérios de Aceitação:
+A resposta deve ter o código HTTP 200.
+O corpo da resposta deve conter todos os campos mencionados, com os valores corretos
