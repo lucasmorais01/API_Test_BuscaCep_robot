@@ -43,8 +43,6 @@ Consulta endereco
     
 
 
-
-
 Conferir consulta de endereco
     Log To Console    ${RESPOSTA}
     Status Should Be    200
