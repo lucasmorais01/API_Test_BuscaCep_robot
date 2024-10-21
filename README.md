@@ -13,12 +13,12 @@ A API retorna uma lista de endereços relacionados ao nome "Domingos", e os test
 Validações de Dados
 Foram validados os seguintes campos do JSON:
 
-CEP ( aplicado)
-Logradouro ( aplicado)
-Complemento
-Bairro
-Localidade
-UF (aplicado)
+CEP ( aplicado), 
+Logradouro ( aplicado), 
+Complemento, 
+Bairro,
+Localidade, 
+UF (aplicado), 
 IBGE
 DDD
 
