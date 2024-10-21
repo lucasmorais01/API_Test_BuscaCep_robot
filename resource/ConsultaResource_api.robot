@@ -5,9 +5,9 @@ Library    Collections
 
 
 *** Variables ***
-${EXPECTED_CEP}   91420-270
-${EXPECTED_LOGRADOURO}  Rua São Domingos
-${EXPECTED_UF}    RS
+${EXPECTED_CEP}   
+${EXPECTED_LOGRADOURO}  
+${EXPECTED_UF}    
 
 *** Keywords ***
 
@@ -54,6 +54,31 @@ Conferir consulta de endereco
 
     ${EXPECTED_UF}    Get From List    ${RESPOSTA}    0
     Dictionary Should Contain Value    ${EXPECTED_UF}    RS   
+
+    Log To Console    Conferir consulta de endereco
+
+
+
+
+Conferir consulta de endereco lista 2
+        Log To Console    ${RESPOSTA}
+        Status Should Be    200
+         ${EXPECTED_CEP}    Get From List    ${RESPOSTA}    1
+        Dictionary Should Contain Value    ${EXPECTED_CEP}    91040-000
+
+        ${EXPECTED_LOGRADOURO}    Get From List    ${RESPOSTA}    1
+        Dictionary Should Contain Value    ${EXPECTED_LOGRADOURO}    Rua Domingos Rubbo
+        
+        ${EXPECTED_UF}    Get From List     ${RESPOSTA}    1
+        Dictionary Should Contain Value    ${EXPECTED_UF}    RS
+
+
+
+
+       
+ 
+
+
 
     
        
