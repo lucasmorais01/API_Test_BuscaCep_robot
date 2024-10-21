@@ -4,21 +4,32 @@ Library    String
 Library    Collections
 
 
+*** Variables ***
+${EXPECTED_CEP}   91420-270
+${EXPECTED_LOGRADOURO}  Rua São Domingos
+${EXPECTED_UF}    RS
+
 *** Keywords ***
 
-Criar sessao da buscaEndereco
-    Create Session    alias=buscaEndereco    url=https://viacep.com.br/ws
-    
+Session headers
 
+     ${headers}    Create Dictionary    accept=application/json    Content-Type=application/json
+        Create Session    alias=buscaEndereco    url=https://viacep.com.br/ws  ${headers}=${headers}
+
+Criar sessao da buscaEndereco
+  Create Session    alias=buscaEndereco    url=https://viacep.com.br/ws 
+      
 Consulta endereco
-    ${body}    Create Dictionary    cep=91420-270
+    ${body}    Create Dictionary 
+    ...        cep=91420-270
     ...        logradouro=Rua São Domingos
-    ...        bairro=Bom Jesus 
+    ...        bairro=Bom Jesus
     ...        localidade=Porto Alegre
     ...        estado=Rio Grande do Sul
     ...        regiao=sul
     ...        ibge=8801
     ...        ddd=51
+    Log    ${body}
 
     Criar sessao da buscaEndereco   
 
@@ -31,15 +42,13 @@ Consulta endereco
     Set Test Variable    ${RESPOSTA}  ${resposta.json()}    
     
 
- Criar sessao na ServeRest
 
-     ${headers}    Create Dictionary    accept=application/json    Content-Type=application/json
-     Create Session    alias=buscaEndereco    url=https://viacep.com.br/ws  ${headers}=${headers}
 
 
 Conferir consulta de endereco
     Log To Console    ${RESPOSTA}
     Status Should Be    200
+   
     
 
 
