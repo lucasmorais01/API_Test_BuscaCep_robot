@@ -20,7 +20,7 @@ Criar sessao da buscaEndereco
   Create Session    alias=buscaEndereco    url=https://viacep.com.br/ws 
       
 Consulta endereco
-    ${body}    Create Dictionary 
+   ${body}    Create Dictionary 
     ...        cep=91420-270
     ...        logradouro=Rua São Domingos
     ...        bairro=Bom Jesus
@@ -48,6 +48,20 @@ Consulta endereco
 Conferir consulta de endereco
     Log To Console    ${RESPOSTA}
     Status Should Be    200
+    ${EXPECTED_CEP}    Get From List    ${RESPOSTA}    0
+    Dictionary Should Contain Value    ${EXPECTED_CEP}    91420-270
+
+    ${EXPECTED_LOGRADOURO}    Get From List    ${RESPOSTA}    0
+    Dictionary Should Contain Value     ${EXPECTED_LOGRADOURO}    Rua São Domingos
+
+    ${EXPECTED_UF}    Get From List    ${RESPOSTA}    0
+    Dictionary Should Contain Value    ${EXPECTED_UF}    RS   
+
+    
+       
+        
+   
+   
    
     
 
