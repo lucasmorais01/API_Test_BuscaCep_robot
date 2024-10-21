@@ -1,4 +1,5 @@
-Descrição
+Descrição:
+
 Este projeto utiliza o Robot Framework para automatizar testes de APIs. 
 
 O foco deste projeto foi realizar requisições de testes na api do (viacep.com.br), validando o retorno dos dados JSON, com foco no retorno feliz das informações.
