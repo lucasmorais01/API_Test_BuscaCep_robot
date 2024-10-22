@@ -1,2 +1,0 @@
-pip install robotframework-requests
-pip install robotframework-collections
