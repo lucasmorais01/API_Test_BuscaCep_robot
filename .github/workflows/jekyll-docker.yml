@@ -29,7 +29,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install robotframework
           pip install robotframework-requests  
-          pip install -r requirements.txt  
+           
       # 4. Executa os testes do Robot Framework
     - name: Run Robot Framework Tests
       run: |
