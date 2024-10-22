@@ -30,5 +30,8 @@ RequestsLibrary: Biblioteca para realizar requisições HTTP.
 Collections: Biblioteca do Robot Framework para manipulação de listas e dicionários.
 
 
+Foi incluído workFlow do github actions para rodar os testes na esteira CI em cada ajuste realizado.
+
+
 
 
