@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.9.13 on win32)" generated="2024-10-21T15:33:04.419987" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.9.13 on win32)" generated="2024-10-21T16:07:35.794943" rpa="false" schemaversion="5">
 <suite id="s1" name="ConsultaEnderecoApi testing" source="C:\Users\lucas\Documents\buscaEndereco_testing\tests\ConsultaEnderecoApi_testing.robot">
 <test id="s1-t1" name="Cenario 01: consultarEnderecoTest" line="6">
 <kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-10-21T15:33:04.792947" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-10-21T16:07:36.128872" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=buscaEndereco</arg>
 <arg>url=https://viacep.com.br/ws</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-10-21T15:33:04.792947" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.127870" elapsed="0.001002"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:04.792947" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.126881" elapsed="0.002991"/>
 </kw>
 <kw name="Consulta endereco" owner="ConsultaResource_api">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-10-21T15:33:04.792947" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<msg time="2024-10-21T16:07:36.130874" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
 <var>${body}</var>
 <arg>cep=91420-270</arg>
 <arg>logradouro=Rua São Domingos</arg>
@@ -25,39 +25,39 @@
 <arg>ibge=8801</arg>
 <arg>ddd=51</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-10-21T15:33:04.792947" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.130874" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-10-21T15:33:04.792947" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<msg time="2024-10-21T16:07:36.131872" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
 <arg>${body}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-10-21T15:33:04.792947" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.131872" elapsed="0.000000"/>
 </kw>
 <kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-10-21T15:33:04.798975" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-10-21T16:07:36.132872" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=buscaEndereco</arg>
 <arg>url=https://viacep.com.br/ws</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-10-21T15:33:04.798975" elapsed="0.001014"/>
+<status status="PASS" start="2024-10-21T16:07:36.132872" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:04.792947" elapsed="0.007042"/>
+<status status="PASS" start="2024-10-21T16:07:36.131872" elapsed="0.001000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-21T15:33:04.799989" level="INFO">${resposta} = </msg>
+<msg time="2024-10-21T16:07:36.133872" level="INFO">${resposta} = </msg>
 <var>${resposta}</var>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-21T15:33:04.799989" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.132872" elapsed="0.001000"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-10-21T15:33:05.494993" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+<msg time="2024-10-21T16:07:36.641339" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
  path_url=/ws/RS/Porto%20Alegre/Domingos/json/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '189', 'Content-Type': 'application/json'} 
  body=b'{"cep": "91420-270", "logradouro": "Rua S\\u00e3o Domingos", "bairro": "Bom Jesus", "localidade": "Porto Alegre", "estado": "Rio Grande do Sul", "regiao": "sul", "ibge": "8801", "ddd": "51"}' 
  </msg>
-<msg time="2024-10-21T15:33:05.494993" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+<msg time="2024-10-21T16:07:36.641339" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
  status=200, reason=OK 
- headers={'Server': 'nginx/1.22.0', 'Date': 'Mon, 21 Oct 2024 18:33:01 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Mon, 21 Oct 2024 19:33:01 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
+ headers={'Server': 'nginx/1.22.0', 'Date': 'Mon, 21 Oct 2024 19:07:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Mon, 21 Oct 2024 20:07:32 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
  body=[
   {
     "cep": "91420-270",
@@ -316,106 +316,107 @@
   }
 ] 
  </msg>
-<msg time="2024-10-21T15:33:05.494993" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg time="2024-10-21T16:07:36.641859" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg time="2024-10-21T15:33:05.494993" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
+<msg time="2024-10-21T16:07:36.641859" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
 <var>${resposta}</var>
 <arg>alias=buscaEndereco</arg>
 <arg>url=/RS/Porto Alegre/Domingos/json/</arg>
 <arg>json=${body}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-10-21T15:33:04.799989" elapsed="0.695004"/>
+<status status="PASS" start="2024-10-21T16:07:36.133872" elapsed="0.507987"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${resposta.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.494993" elapsed="0.007343"/>
+<status status="PASS" start="2024-10-21T16:07:36.642872" elapsed="0.004172"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-10-21T15:33:05.502336" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
+<msg time="2024-10-21T16:07:36.649495" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
 <arg>${RESPOSTA}</arg>
 <arg>${resposta.json()}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.502336" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.647044" elapsed="0.002451"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:04.792947" elapsed="0.709389"/>
+<status status="PASS" start="2024-10-21T16:07:36.129872" elapsed="0.519623"/>
 </kw>
 <kw name="Conferir consulta de endereco" owner="ConsultaResource_api">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.502336" elapsed="0.025188"/>
+<status status="PASS" start="2024-10-21T16:07:36.650509" elapsed="0.004006"/>
 </kw>
 <kw name="Status Should Be" owner="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.527524" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.655511" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T15:33:05.527524" level="INFO">${EXPECTED_CEP} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
+<msg time="2024-10-21T16:07:36.656505" level="INFO">${EXPECTED_CEP} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
 <var>${EXPECTED_CEP}</var>
 <arg>${RESPOSTA}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.527524" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.656505" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_CEP}</arg>
 <arg>91420-270</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.527524" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.656505" elapsed="0.001061"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T15:33:05.527524" level="INFO">${EXPECTED_LOGRADOURO} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
+<msg time="2024-10-21T16:07:36.657566" level="INFO">${EXPECTED_LOGRADOURO} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
 <var>${EXPECTED_LOGRADOURO}</var>
 <arg>${RESPOSTA}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.527524" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.657566" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_LOGRADOURO}</arg>
 <arg>Rua São Domingos</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.527524" elapsed="0.008028"/>
+<status status="PASS" start="2024-10-21T16:07:36.657566" elapsed="0.001010"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T15:33:05.535552" level="INFO">${EXPECTED_UF} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
+<msg time="2024-10-21T16:07:36.658576" level="INFO">${EXPECTED_UF} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
 <var>${EXPECTED_UF}</var>
 <arg>${RESPOSTA}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.535552" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.658576" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_UF}</arg>
 <arg>RS</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.535552" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.658576" elapsed="0.000000"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-21T16:07:36.658576" level="INFO">Conferir consulta de endereco</msg>
 <arg>Conferir consulta de endereco</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.535552" elapsed="0.000000"/>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-21T16:07:36.658576" elapsed="0.001022"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:05.502336" elapsed="0.033216"/>
+<status status="PASS" start="2024-10-21T16:07:36.650509" elapsed="0.009089"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:04.791795" elapsed="0.743757"/>
+<status status="PASS" start="2024-10-21T16:07:36.125875" elapsed="0.533723"/>
 </test>
 <test id="s1-t2" name="Cenario 02: consultarEnderecoTest2" line="12">
 <kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-10-21T15:33:05.543551" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-10-21T16:07:36.663633" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=buscaEndereco</arg>
 <arg>url=https://viacep.com.br/ws</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-10-21T15:33:05.543551" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.662636" elapsed="0.000997"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:05.543551" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.661620" elapsed="0.002013"/>
 </kw>
 <kw name="Consulta endereco" owner="ConsultaResource_api">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-10-21T15:33:05.547909" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<msg time="2024-10-21T16:07:36.665539" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
 <var>${body}</var>
 <arg>cep=91420-270</arg>
 <arg>logradouro=Rua São Domingos</arg>
@@ -426,39 +427,39 @@
 <arg>ibge=8801</arg>
 <arg>ddd=51</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.547909" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.665031" elapsed="0.000508"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-10-21T15:33:05.547909" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<msg time="2024-10-21T16:07:36.666549" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
 <arg>${body}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.547909" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.665539" elapsed="0.001010"/>
 </kw>
 <kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-10-21T15:33:05.551280" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-10-21T16:07:36.667549" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=buscaEndereco</arg>
 <arg>url=https://viacep.com.br/ws</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-10-21T15:33:05.551280" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.666549" elapsed="0.001000"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:05.551280" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.666549" elapsed="0.001000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-21T15:33:05.551280" level="INFO">${resposta} = </msg>
+<msg time="2024-10-21T16:07:36.667549" level="INFO">${resposta} = </msg>
 <var>${resposta}</var>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.551280" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:36.667549" elapsed="0.001175"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-10-21T15:33:06.199861" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+<msg time="2024-10-21T16:07:37.130508" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
  path_url=/ws/RS/Porto%20Alegre/Domingos/json/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '189', 'Content-Type': 'application/json'} 
  body=b'{"cep": "91420-270", "logradouro": "Rua S\\u00e3o Domingos", "bairro": "Bom Jesus", "localidade": "Porto Alegre", "estado": "Rio Grande do Sul", "regiao": "sul", "ibge": "8801", "ddd": "51"}' 
  </msg>
-<msg time="2024-10-21T15:33:06.199861" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+<msg time="2024-10-21T16:07:37.130508" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
  status=200, reason=OK 
- headers={'Server': 'nginx/1.22.0', 'Date': 'Mon, 21 Oct 2024 18:33:02 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Mon, 21 Oct 2024 19:33:02 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
+ headers={'Server': 'nginx/1.22.0', 'Date': 'Mon, 21 Oct 2024 19:07:33 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Mon, 21 Oct 2024 20:07:33 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
  body=[
   {
     "cep": "91420-270",
@@ -717,88 +718,88 @@
   }
 ] 
  </msg>
-<msg time="2024-10-21T15:33:06.201882" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg time="2024-10-21T16:07:37.130508" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg time="2024-10-21T15:33:06.201882" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
+<msg time="2024-10-21T16:07:37.131553" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
 <var>${resposta}</var>
 <arg>alias=buscaEndereco</arg>
 <arg>url=/RS/Porto Alegre/Domingos/json/</arg>
 <arg>json=${body}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-10-21T15:33:05.551280" elapsed="0.650602"/>
+<status status="PASS" start="2024-10-21T16:07:36.668724" elapsed="0.462829"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${resposta.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.203657" elapsed="0.000520"/>
+<status status="PASS" start="2024-10-21T16:07:37.131553" elapsed="0.003554"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-10-21T15:33:06.210116" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
+<msg time="2024-10-21T16:07:37.136117" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
 <arg>${RESPOSTA}</arg>
 <arg>${resposta.json()}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.204177" elapsed="0.005939"/>
+<status status="PASS" start="2024-10-21T16:07:37.135107" elapsed="0.001010"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:05.547909" elapsed="0.662207"/>
+<status status="PASS" start="2024-10-21T16:07:36.663633" elapsed="0.472484"/>
 </kw>
 <kw name="Conferir consulta de endereco lista 2" owner="ConsultaResource_api">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.212145" elapsed="0.001747"/>
+<status status="PASS" start="2024-10-21T16:07:37.137195" elapsed="0.004132"/>
 </kw>
 <kw name="Status Should Be" owner="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.213892" elapsed="0.004395"/>
+<status status="PASS" start="2024-10-21T16:07:37.141327" elapsed="0.000996"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T15:33:06.218287" level="INFO">${EXPECTED_CEP} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
+<msg time="2024-10-21T16:07:37.142323" level="INFO">${EXPECTED_CEP} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
 <var>${EXPECTED_CEP}</var>
 <arg>${RESPOSTA}</arg>
 <arg>1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.218287" elapsed="0.001136"/>
+<status status="PASS" start="2024-10-21T16:07:37.142323" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_CEP}</arg>
 <arg>91040-000</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.219423" elapsed="0.001023"/>
+<status status="PASS" start="2024-10-21T16:07:37.142323" elapsed="0.001018"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T15:33:06.220446" level="INFO">${EXPECTED_LOGRADOURO} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
+<msg time="2024-10-21T16:07:37.143341" level="INFO">${EXPECTED_LOGRADOURO} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
 <var>${EXPECTED_LOGRADOURO}</var>
 <arg>${RESPOSTA}</arg>
 <arg>1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.220446" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:37.143341" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_LOGRADOURO}</arg>
 <arg>Rua Domingos Rubbo</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.220446" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:37.143341" elapsed="0.000996"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T15:33:06.220446" level="INFO">${EXPECTED_UF} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
+<msg time="2024-10-21T16:07:37.144337" level="INFO">${EXPECTED_UF} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
 <var>${EXPECTED_UF}</var>
 <arg>${RESPOSTA}</arg>
 <arg>1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.220446" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:37.144337" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_UF}</arg>
 <arg>RS</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T15:33:06.220446" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-21T16:07:37.144337" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:06.212145" elapsed="0.008301"/>
+<status status="PASS" start="2024-10-21T16:07:37.137195" elapsed="0.007142"/>
 </kw>
-<status status="PASS" start="2024-10-21T15:33:05.543551" elapsed="0.676895"/>
+<status status="PASS" start="2024-10-21T16:07:36.660611" elapsed="0.484848"/>
 </test>
-<status status="PASS" start="2024-10-21T15:33:04.421506" elapsed="1.806068"/>
+<status status="PASS" start="2024-10-21T16:07:35.797026" elapsed="1.349814"/>
 </suite>
 <statistics>
 <total>

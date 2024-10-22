@@ -55,7 +55,7 @@ Conferir consulta de endereco
     ${EXPECTED_UF}    Get From List    ${RESPOSTA}    0
     Dictionary Should Contain Value    ${EXPECTED_UF}    RS   
 
-    Log To Console    Conferir consulta de endereco
+    Log   Conferir consulta de endereco
 
 
 
@@ -68,7 +68,7 @@ Conferir consulta de endereco lista 2
 
         ${EXPECTED_LOGRADOURO}    Get From List    ${RESPOSTA}    1
         Dictionary Should Contain Value    ${EXPECTED_LOGRADOURO}    Rua Domingos Rubbo
-        
+
         ${EXPECTED_UF}    Get From List     ${RESPOSTA}    1
         Dictionary Should Contain Value    ${EXPECTED_UF}    RS
 
