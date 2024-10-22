@@ -7,7 +7,8 @@ Library    Collections
 *** Variables ***
 ${EXPECTED_CEP}   
 ${EXPECTED_LOGRADOURO}  
-${EXPECTED_UF}    
+${EXPECTED_UF}
+${EXPECTED_CIDADE}
 
 *** Keywords ***
 
