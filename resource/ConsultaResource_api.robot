@@ -65,7 +65,7 @@ Conferir consulta de endereco lista 2
         Log To Console    ${RESPOSTA}
         Status Should Be    200
          ${EXPECTED_CEP}    Get From List    ${RESPOSTA}    1
-        Dictionary Should Contain Value    ${EXPECTED_CEP}    91040-000
+        Dictionary Should Contain Value    ${EXPECTED_CEP}    91040-001
 
         ${EXPECTED_LOGRADOURO}    Get From List    ${RESPOSTA}    1
         Dictionary Should Contain Value    ${EXPECTED_LOGRADOURO}    Rua Domingos Rubbo
