@@ -32,7 +32,6 @@ Collections: Biblioteca do Robot Framework para manipulação de listas e dicion
 Workflow rodando os Testes no ambiente docker do github actions
 
 
-Foi incluído workFlow do github actions para rodar os testes na esteira CI em cada ajuste realizado.
 
 
 
