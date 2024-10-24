@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.9.13 on win32)" generated="2024-10-21T16:07:35.794943" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.9.13 on win32)" generated="2024-10-24T20:41:32.819016" rpa="false" schemaversion="5">
 <suite id="s1" name="ConsultaEnderecoApi testing" source="C:\Users\lucas\Documents\buscaEndereco_testing\tests\ConsultaEnderecoApi_testing.robot">
-<test id="s1-t1" name="Cenario 01: consultarEnderecoTest" line="6">
+<test id="s1-t1" name="CT-1: consultarEnderecoTest" line="6">
 <kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-10-21T16:07:36.128872" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-10-24T20:41:33.096820" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=buscaEndereco</arg>
 <arg>url=https://viacep.com.br/ws</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-10-21T16:07:36.127870" elapsed="0.001002"/>
+<status status="PASS" start="2024-10-24T20:41:33.096820" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:36.126881" elapsed="0.002991"/>
+<status status="PASS" start="2024-10-24T20:41:33.096820" elapsed="0.000000"/>
 </kw>
 <kw name="Consulta endereco" owner="ConsultaResource_api">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-10-21T16:07:36.130874" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<msg time="2024-10-24T20:41:33.103043" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
 <var>${body}</var>
 <arg>cep=91420-270</arg>
 <arg>logradouro=Rua São Domingos</arg>
@@ -25,39 +25,39 @@
 <arg>ibge=8801</arg>
 <arg>ddd=51</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.130874" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:33.102510" elapsed="0.000533"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-10-21T16:07:36.131872" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<msg time="2024-10-24T20:41:33.103043" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
 <arg>${body}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.131872" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:33.103043" elapsed="0.000000"/>
 </kw>
 <kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-10-21T16:07:36.132872" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-10-24T20:41:33.103043" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=buscaEndereco</arg>
 <arg>url=https://viacep.com.br/ws</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-10-21T16:07:36.132872" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:33.103043" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:36.131872" elapsed="0.001000"/>
+<status status="PASS" start="2024-10-24T20:41:33.103043" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-21T16:07:36.133872" level="INFO">${resposta} = </msg>
+<msg time="2024-10-24T20:41:33.103043" level="INFO">${resposta} = </msg>
 <var>${resposta}</var>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.132872" elapsed="0.001000"/>
+<status status="PASS" start="2024-10-24T20:41:33.103043" elapsed="0.000000"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-10-21T16:07:36.641339" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+<msg time="2024-10-24T20:41:33.694282" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
  path_url=/ws/RS/Porto%20Alegre/Domingos/json/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '189', 'Content-Type': 'application/json'} 
  body=b'{"cep": "91420-270", "logradouro": "Rua S\\u00e3o Domingos", "bairro": "Bom Jesus", "localidade": "Porto Alegre", "estado": "Rio Grande do Sul", "regiao": "sul", "ibge": "8801", "ddd": "51"}' 
  </msg>
-<msg time="2024-10-21T16:07:36.641339" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+<msg time="2024-10-24T20:41:33.694282" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
  status=200, reason=OK 
- headers={'Server': 'nginx/1.22.0', 'Date': 'Mon, 21 Oct 2024 19:07:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Mon, 21 Oct 2024 20:07:32 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
+ headers={'Server': 'nginx/1.22.0', 'Date': 'Thu, 24 Oct 2024 23:41:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Fri, 25 Oct 2024 00:41:29 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
  body=[
   {
     "cep": "91420-270",
@@ -316,107 +316,107 @@
   }
 ] 
  </msg>
-<msg time="2024-10-21T16:07:36.641859" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg time="2024-10-24T20:41:33.694282" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg time="2024-10-21T16:07:36.641859" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
+<msg time="2024-10-24T20:41:33.702462" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
 <var>${resposta}</var>
 <arg>alias=buscaEndereco</arg>
 <arg>url=/RS/Porto Alegre/Domingos/json/</arg>
 <arg>json=${body}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.133872" elapsed="0.507987"/>
+<status status="PASS" start="2024-10-24T20:41:33.103043" elapsed="0.599419"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${resposta.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.642872" elapsed="0.004172"/>
+<status status="PASS" start="2024-10-24T20:41:33.702462" elapsed="0.017196"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-10-21T16:07:36.649495" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
+<msg time="2024-10-24T20:41:33.719658" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
 <arg>${RESPOSTA}</arg>
 <arg>${resposta.json()}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.647044" elapsed="0.002451"/>
+<status status="PASS" start="2024-10-24T20:41:33.719658" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:36.129872" elapsed="0.519623"/>
+<status status="PASS" start="2024-10-24T20:41:33.101357" elapsed="0.618301"/>
 </kw>
 <kw name="Conferir consulta de endereco" owner="ConsultaResource_api">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.650509" elapsed="0.004006"/>
+<status status="PASS" start="2024-10-24T20:41:33.719658" elapsed="0.012293"/>
 </kw>
 <kw name="Status Should Be" owner="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.655511" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:33.731951" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T16:07:36.656505" level="INFO">${EXPECTED_CEP} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
+<msg time="2024-10-24T20:41:33.731951" level="INFO">${EXPECTED_CEP} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
 <var>${EXPECTED_CEP}</var>
 <arg>${RESPOSTA}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.656505" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:33.731951" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_CEP}</arg>
 <arg>91420-270</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.656505" elapsed="0.001061"/>
+<status status="PASS" start="2024-10-24T20:41:33.731951" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T16:07:36.657566" level="INFO">${EXPECTED_LOGRADOURO} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
+<msg time="2024-10-24T20:41:33.735993" level="INFO">${EXPECTED_LOGRADOURO} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
 <var>${EXPECTED_LOGRADOURO}</var>
 <arg>${RESPOSTA}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.657566" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:33.731951" elapsed="0.004042"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_LOGRADOURO}</arg>
 <arg>Rua São Domingos</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.657566" elapsed="0.001010"/>
+<status status="PASS" start="2024-10-24T20:41:33.735993" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T16:07:36.658576" level="INFO">${EXPECTED_UF} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
+<msg time="2024-10-24T20:41:33.735993" level="INFO">${EXPECTED_UF} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul'...</msg>
 <var>${EXPECTED_UF}</var>
 <arg>${RESPOSTA}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.658576" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:33.735993" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_UF}</arg>
 <arg>RS</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.658576" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:33.735993" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-10-21T16:07:36.658576" level="INFO">Conferir consulta de endereco</msg>
+<msg time="2024-10-24T20:41:33.735993" level="INFO">Conferir consulta de endereco</msg>
 <arg>Conferir consulta de endereco</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.658576" elapsed="0.001022"/>
+<status status="PASS" start="2024-10-24T20:41:33.735993" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:36.650509" elapsed="0.009089"/>
+<status status="PASS" start="2024-10-24T20:41:33.719658" elapsed="0.016335"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:36.125875" elapsed="0.533723"/>
+<status status="PASS" start="2024-10-24T20:41:33.096820" elapsed="0.639173"/>
 </test>
-<test id="s1-t2" name="Cenario 02: consultarEnderecoTest2" line="12">
+<test id="s1-t2" name="CT-2: consultarEnderecoTest2" line="12">
 <kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-10-21T16:07:36.663633" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-10-24T20:41:33.744264" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=buscaEndereco</arg>
 <arg>url=https://viacep.com.br/ws</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-10-21T16:07:36.662636" elapsed="0.000997"/>
+<status status="PASS" start="2024-10-24T20:41:33.744264" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:36.661620" elapsed="0.002013"/>
+<status status="PASS" start="2024-10-24T20:41:33.744264" elapsed="0.000000"/>
 </kw>
 <kw name="Consulta endereco" owner="ConsultaResource_api">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-10-21T16:07:36.665539" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<msg time="2024-10-24T20:41:33.744264" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
 <var>${body}</var>
 <arg>cep=91420-270</arg>
 <arg>logradouro=Rua São Domingos</arg>
@@ -427,39 +427,39 @@
 <arg>ibge=8801</arg>
 <arg>ddd=51</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.665031" elapsed="0.000508"/>
+<status status="PASS" start="2024-10-24T20:41:33.744264" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-10-21T16:07:36.666549" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<msg time="2024-10-24T20:41:33.744264" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
 <arg>${body}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.665539" elapsed="0.001010"/>
+<status status="PASS" start="2024-10-24T20:41:33.744264" elapsed="0.000000"/>
 </kw>
 <kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-10-21T16:07:36.667549" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-10-24T20:41:33.744264" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=buscaEndereco</arg>
 <arg>url=https://viacep.com.br/ws</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-10-21T16:07:36.666549" elapsed="0.001000"/>
+<status status="PASS" start="2024-10-24T20:41:33.744264" elapsed="0.007776"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:36.666549" elapsed="0.001000"/>
+<status status="PASS" start="2024-10-24T20:41:33.744264" elapsed="0.007776"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-10-21T16:07:36.667549" level="INFO">${resposta} = </msg>
+<msg time="2024-10-24T20:41:33.752040" level="INFO">${resposta} = </msg>
 <var>${resposta}</var>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.667549" elapsed="0.001175"/>
+<status status="PASS" start="2024-10-24T20:41:33.752040" elapsed="0.000000"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-10-21T16:07:37.130508" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+<msg time="2024-10-24T20:41:34.213220" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
  path_url=/ws/RS/Porto%20Alegre/Domingos/json/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '189', 'Content-Type': 'application/json'} 
  body=b'{"cep": "91420-270", "logradouro": "Rua S\\u00e3o Domingos", "bairro": "Bom Jesus", "localidade": "Porto Alegre", "estado": "Rio Grande do Sul", "regiao": "sul", "ibge": "8801", "ddd": "51"}' 
  </msg>
-<msg time="2024-10-21T16:07:37.130508" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+<msg time="2024-10-24T20:41:34.213220" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
  status=200, reason=OK 
- headers={'Server': 'nginx/1.22.0', 'Date': 'Mon, 21 Oct 2024 19:07:33 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Mon, 21 Oct 2024 20:07:33 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
+ headers={'Server': 'nginx/1.22.0', 'Date': 'Thu, 24 Oct 2024 23:41:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Fri, 25 Oct 2024 00:41:30 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
  body=[
   {
     "cep": "91420-270",
@@ -718,97 +718,1164 @@
   }
 ] 
  </msg>
-<msg time="2024-10-21T16:07:37.130508" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg time="2024-10-24T20:41:34.214357" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg time="2024-10-21T16:07:37.131553" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
+<msg time="2024-10-24T20:41:34.215908" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
 <var>${resposta}</var>
 <arg>alias=buscaEndereco</arg>
 <arg>url=/RS/Porto Alegre/Domingos/json/</arg>
 <arg>json=${body}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-10-21T16:07:36.668724" elapsed="0.462829"/>
+<status status="PASS" start="2024-10-24T20:41:33.752040" elapsed="0.463868"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${resposta.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.131553" elapsed="0.003554"/>
+<status status="PASS" start="2024-10-24T20:41:34.216932" elapsed="0.006000"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-10-21T16:07:37.136117" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
+<msg time="2024-10-24T20:41:34.223927" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
 <arg>${RESPOSTA}</arg>
 <arg>${resposta.json()}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.135107" elapsed="0.001010"/>
+<status status="PASS" start="2024-10-24T20:41:34.222932" elapsed="0.000995"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:36.663633" elapsed="0.472484"/>
+<status status="PASS" start="2024-10-24T20:41:33.744264" elapsed="0.481129"/>
 </kw>
 <kw name="Conferir consulta de endereco lista 2" owner="ConsultaResource_api">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${RESPOSTA}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.137195" elapsed="0.004132"/>
+<status status="PASS" start="2024-10-24T20:41:34.226545" elapsed="0.006381"/>
 </kw>
 <kw name="Status Should Be" owner="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.141327" elapsed="0.000996"/>
+<status status="PASS" start="2024-10-24T20:41:34.232926" elapsed="0.001271"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T16:07:37.142323" level="INFO">${EXPECTED_CEP} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
+<msg time="2024-10-24T20:41:34.235323" level="INFO">${EXPECTED_CEP} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
 <var>${EXPECTED_CEP}</var>
 <arg>${RESPOSTA}</arg>
 <arg>1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.142323" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:34.235323" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_CEP}</arg>
 <arg>91040-000</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.142323" elapsed="0.001018"/>
+<status status="PASS" start="2024-10-24T20:41:34.236347" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T16:07:37.143341" level="INFO">${EXPECTED_LOGRADOURO} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
+<msg time="2024-10-24T20:41:34.238484" level="INFO">${EXPECTED_LOGRADOURO} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
 <var>${EXPECTED_LOGRADOURO}</var>
 <arg>${RESPOSTA}</arg>
 <arg>1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.143341" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:34.237364" elapsed="0.001120"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_LOGRADOURO}</arg>
 <arg>Rua Domingos Rubbo</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.143341" elapsed="0.000996"/>
+<status status="PASS" start="2024-10-24T20:41:34.238484" elapsed="0.001035"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-10-21T16:07:37.144337" level="INFO">${EXPECTED_UF} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
+<msg time="2024-10-24T20:41:34.239519" level="INFO">${EXPECTED_UF} = {'cep': '91040-000', 'logradouro': 'Rua Domingos Rubbo', 'complemento': '', 'unidade': '', 'bairro': 'Cristo Redentor', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao...</msg>
 <var>${EXPECTED_UF}</var>
 <arg>${RESPOSTA}</arg>
 <arg>1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.144337" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:34.239519" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Value" owner="Collections">
 <arg>${EXPECTED_UF}</arg>
 <arg>RS</arg>
 <doc>Fails if ``value`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-10-21T16:07:37.144337" elapsed="0.000000"/>
+<status status="PASS" start="2024-10-24T20:41:34.240936" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:37.137195" elapsed="0.007142"/>
+<status status="PASS" start="2024-10-24T20:41:34.225393" elapsed="0.015543"/>
 </kw>
-<status status="PASS" start="2024-10-21T16:07:36.660611" elapsed="0.484848"/>
+<status status="PASS" start="2024-10-24T20:41:33.735993" elapsed="0.506328"/>
 </test>
-<status status="PASS" start="2024-10-21T16:07:35.797026" elapsed="1.349814"/>
+<test id="s1-t3" name="CT-3: Verificar tempo de resposta da API" line="18">
+<kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:34.247062" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=buscaEndereco</arg>
+<arg>url=https://viacep.com.br/ws</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-10-24T20:41:34.247062" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:34.246022" elapsed="0.001040"/>
+</kw>
+<kw name="Consulta endereco" owner="ConsultaResource_api">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-10-24T20:41:34.249892" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<var>${body}</var>
+<arg>cep=91420-270</arg>
+<arg>logradouro=Rua São Domingos</arg>
+<arg>bairro=Bom Jesus</arg>
+<arg>localidade=Porto Alegre</arg>
+<arg>estado=Rio Grande do Sul</arg>
+<arg>regiao=sul</arg>
+<arg>ibge=8801</arg>
+<arg>ddd=51</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-10-24T20:41:34.249892" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-24T20:41:34.250986" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<arg>${body}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-24T20:41:34.250986" elapsed="0.000000"/>
+</kw>
+<kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:34.252413" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=buscaEndereco</arg>
+<arg>url=https://viacep.com.br/ws</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-10-24T20:41:34.252413" elapsed="0.001031"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:34.250986" elapsed="0.002458"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-24T20:41:34.254508" level="INFO">${resposta} = </msg>
+<var>${resposta}</var>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-24T20:41:34.254508" elapsed="0.000000"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:34.827451" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+ path_url=/ws/RS/Porto%20Alegre/Domingos/json/ 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '189', 'Content-Type': 'application/json'} 
+ body=b'{"cep": "91420-270", "logradouro": "Rua S\\u00e3o Domingos", "bairro": "Bom Jesus", "localidade": "Porto Alegre", "estado": "Rio Grande do Sul", "regiao": "sul", "ibge": "8801", "ddd": "51"}' 
+ </msg>
+<msg time="2024-10-24T20:41:34.827451" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.22.0', 'Date': 'Thu, 24 Oct 2024 23:41:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Fri, 25 Oct 2024 00:41:30 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
+ body=[
+  {
+    "cep": "91420-270",
+    "logradouro": "Rua São Domingos",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Bom Jesus",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91040-000",
+    "logradouro": "Rua Domingos Rubbo",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cristo Redentor",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91040-320",
+    "logradouro": "Rua Domingos Martins",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cristo Redentor",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91120-090",
+    "logradouro": "Rua Domingos de Abreu",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Sarandi",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91910-450",
+    "logradouro": "Rua Domingos da Silva",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Camaquã",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91360-040",
+    "logradouro": "Rua Domingos Seguézio",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Vila Ipiranga",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91790-072",
+    "logradouro": "Rua Domingos José Poli",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Restinga",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91160-080",
+    "logradouro": "Rua Luiz Domingos Ramos",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Santa Rosa de Lima",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90650-063",
+    "logradouro": "Rua Domingos Crescêncio",
+    "complemento": "até 89/90",
+    "unidade": "",
+    "bairro": "Azenha",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90650-090",
+    "logradouro": "Rua Domingos Crescêncio",
+    "complemento": "de 91/92 ao fim",
+    "unidade": "",
+    "bairro": "Santana",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91910-420",
+    "logradouro": "Rua José Domingos Varella",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cavalhada",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90420-200",
+    "logradouro": "Rua Domingos José de Almeida",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Rio Branco",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91790-101",
+    "logradouro": "Rua Domingos Manoel Mincarone",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Restinga",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91261-304",
+    "logradouro": "Rua Domingos Mullet Rodrigues",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Mário Quintana",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91120-480",
+    "logradouro": "Rua Domingos Antônio Santoro",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Sarandi",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91540-650",
+    "logradouro": "Acesso Olavo Domingos de Oliveira",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Jardim Carvalho",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91740-650",
+    "logradouro": "Praça Domingos Fernandes de Souza",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cavalhada",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  }
+] 
+ </msg>
+<msg time="2024-10-24T20:41:34.827451" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg time="2024-10-24T20:41:34.828950" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
+<var>${resposta}</var>
+<arg>alias=buscaEndereco</arg>
+<arg>url=/RS/Porto Alegre/Domingos/json/</arg>
+<arg>json=${body}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-10-24T20:41:34.255493" elapsed="0.573457"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${resposta.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-24T20:41:34.828950" elapsed="0.019291"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-10-24T20:41:34.852250" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
+<arg>${RESPOSTA}</arg>
+<arg>${resposta.json()}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-10-24T20:41:34.849707" elapsed="0.002543"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:34.248536" elapsed="0.603714"/>
+</kw>
+<kw name="Validar Tempo de Resposta" owner="ConsultaResource_api">
+<kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:34.857922" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=buscaEndereco</arg>
+<arg>url=https://viacep.com.br/ws</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-10-24T20:41:34.857922" elapsed="0.001024"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:34.856600" elapsed="0.002346"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:35.441710" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+ path_url=/ws/RS/Porto%20Alegre/Domingos/json/ 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-10-24T20:41:35.441710" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.22.0', 'Date': 'Thu, 24 Oct 2024 23:41:31 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Fri, 25 Oct 2024 00:41:31 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
+ body=[
+  {
+    "cep": "91420-270",
+    "logradouro": "Rua São Domingos",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Bom Jesus",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91040-000",
+    "logradouro": "Rua Domingos Rubbo",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cristo Redentor",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91040-320",
+    "logradouro": "Rua Domingos Martins",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cristo Redentor",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91120-090",
+    "logradouro": "Rua Domingos de Abreu",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Sarandi",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91910-450",
+    "logradouro": "Rua Domingos da Silva",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Camaquã",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91360-040",
+    "logradouro": "Rua Domingos Seguézio",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Vila Ipiranga",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91790-072",
+    "logradouro": "Rua Domingos José Poli",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Restinga",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91160-080",
+    "logradouro": "Rua Luiz Domingos Ramos",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Santa Rosa de Lima",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90650-063",
+    "logradouro": "Rua Domingos Crescêncio",
+    "complemento": "até 89/90",
+    "unidade": "",
+    "bairro": "Azenha",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90650-090",
+    "logradouro": "Rua Domingos Crescêncio",
+    "complemento": "de 91/92 ao fim",
+    "unidade": "",
+    "bairro": "Santana",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91910-420",
+    "logradouro": "Rua José Domingos Varella",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cavalhada",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90420-200",
+    "logradouro": "Rua Domingos José de Almeida",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Rio Branco",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91790-101",
+    "logradouro": "Rua Domingos Manoel Mincarone",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Restinga",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91261-304",
+    "logradouro": "Rua Domingos Mullet Rodrigues",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Mário Quintana",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91120-480",
+    "logradouro": "Rua Domingos Antônio Santoro",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Sarandi",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91540-650",
+    "logradouro": "Acesso Olavo Domingos de Oliveira",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Jardim Carvalho",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91740-650",
+    "logradouro": "Praça Domingos Fernandes de Souza",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cavalhada",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  }
+] 
+ </msg>
+<msg time="2024-10-24T20:41:35.441710" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg time="2024-10-24T20:41:35.442711" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
+<var>${resposta}</var>
+<arg>alias=buscaEndereco</arg>
+<arg>url=/RS/Porto Alegre/Domingos/json/</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-10-24T20:41:34.858946" elapsed="0.584974"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${resposta.elapsed.total_seconds()} &lt; 2</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2024-10-24T20:41:35.443920" elapsed="0.001029"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Tempo de resposta dentro do esperado</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-24T20:41:35.444949" elapsed="0.000992"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:34.853241" elapsed="0.592700"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:34.244558" elapsed="1.201383"/>
+</test>
+<test id="s1-t4" name="CT-4: Verificar ConsultaSemLogradouro" line="24">
+<kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:35.450641" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=buscaEndereco</arg>
+<arg>url=https://viacep.com.br/ws</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-10-24T20:41:35.450641" elapsed="0.001003"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:35.449644" elapsed="0.002000"/>
+</kw>
+<kw name="Consulta endereco" owner="ConsultaResource_api">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-10-24T20:41:35.454638" level="INFO">${body} = {'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<var>${body}</var>
+<arg>cep=91420-270</arg>
+<arg>logradouro=Rua São Domingos</arg>
+<arg>bairro=Bom Jesus</arg>
+<arg>localidade=Porto Alegre</arg>
+<arg>estado=Rio Grande do Sul</arg>
+<arg>regiao=sul</arg>
+<arg>ibge=8801</arg>
+<arg>ddd=51</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-10-24T20:41:35.453649" elapsed="0.000989"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-24T20:41:35.455963" level="INFO">{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'estado': 'Rio Grande do Sul', 'regiao': 'sul', 'ibge': '8801', 'ddd': '51'}</msg>
+<arg>${body}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-24T20:41:35.454638" elapsed="0.001325"/>
+</kw>
+<kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:35.456990" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=buscaEndereco</arg>
+<arg>url=https://viacep.com.br/ws</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-10-24T20:41:35.456990" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:35.455963" elapsed="0.001027"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-24T20:41:35.458028" level="INFO">${resposta} = </msg>
+<var>${resposta}</var>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-24T20:41:35.456990" elapsed="0.001038"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:36.056108" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+ path_url=/ws/RS/Porto%20Alegre/Domingos/json/ 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '189', 'Content-Type': 'application/json'} 
+ body=b'{"cep": "91420-270", "logradouro": "Rua S\\u00e3o Domingos", "bairro": "Bom Jesus", "localidade": "Porto Alegre", "estado": "Rio Grande do Sul", "regiao": "sul", "ibge": "8801", "ddd": "51"}' 
+ </msg>
+<msg time="2024-10-24T20:41:36.056108" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/Domingos/json/ 
+ status=200, reason=OK 
+ headers={'Server': 'nginx/1.22.0', 'Date': 'Thu, 24 Oct 2024 23:41:31 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET', 'Access-Control-Allow-Headers': 'Content-Type, X-Request-With, X-Requested-By', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Max-Age': '86400', 'Expires': 'Fri, 25 Oct 2024 00:41:31 GMT', 'Cache-Control': 'max-age=3600, public', 'Pragma': 'public'} 
+ body=[
+  {
+    "cep": "91420-270",
+    "logradouro": "Rua São Domingos",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Bom Jesus",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91040-000",
+    "logradouro": "Rua Domingos Rubbo",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cristo Redentor",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91040-320",
+    "logradouro": "Rua Domingos Martins",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cristo Redentor",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91120-090",
+    "logradouro": "Rua Domingos de Abreu",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Sarandi",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91910-450",
+    "logradouro": "Rua Domingos da Silva",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Camaquã",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91360-040",
+    "logradouro": "Rua Domingos Seguézio",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Vila Ipiranga",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91790-072",
+    "logradouro": "Rua Domingos José Poli",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Restinga",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91160-080",
+    "logradouro": "Rua Luiz Domingos Ramos",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Santa Rosa de Lima",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90650-063",
+    "logradouro": "Rua Domingos Crescêncio",
+    "complemento": "até 89/90",
+    "unidade": "",
+    "bairro": "Azenha",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90650-090",
+    "logradouro": "Rua Domingos Crescêncio",
+    "complemento": "de 91/92 ao fim",
+    "unidade": "",
+    "bairro": "Santana",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91910-420",
+    "logradouro": "Rua José Domingos Varella",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cavalhada",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "90420-200",
+    "logradouro": "Rua Domingos José de Almeida",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Rio Branco",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91790-101",
+    "logradouro": "Rua Domingos Manoel Mincarone",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Restinga",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91261-304",
+    "logradouro": "Rua Domingos Mullet Rodrigues",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Mário Quintana",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91120-480",
+    "logradouro": "Rua Domingos Antônio Santoro",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Sarandi",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91540-650",
+    "logradouro": "Acesso Olavo Domingos de Oliveira",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Jardim Carvalho",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  },
+  {
+    "cep": "91740-650",
+    "logradouro": "Praça Domingos Fernandes de Souza",
+    "complemento": "",
+    "unidade": "",
+    "bairro": "Cavalhada",
+    "localidade": "Porto Alegre",
+    "uf": "RS",
+    "estado": "Rio Grande do Sul",
+    "regiao": "Sul",
+    "ibge": "4314902",
+    "gia": "",
+    "ddd": "51",
+    "siafi": "8801"
+  }
+] 
+ </msg>
+<msg time="2024-10-24T20:41:36.056631" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg time="2024-10-24T20:41:36.056631" level="INFO">${resposta} = &lt;Response [200]&gt;</msg>
+<var>${resposta}</var>
+<arg>alias=buscaEndereco</arg>
+<arg>url=/RS/Porto Alegre/Domingos/json/</arg>
+<arg>json=${body}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-10-24T20:41:35.458028" elapsed="0.598603"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${resposta.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-24T20:41:36.058508" elapsed="0.018207"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-10-24T20:41:36.078248" level="INFO">${RESPOSTA} = [{'cep': '91420-270', 'logradouro': 'Rua São Domingos', 'complemento': '', 'unidade': '', 'bairro': 'Bom Jesus', 'localidade': 'Porto Alegre', 'uf': 'RS', 'estado': 'Rio Grande do Sul', 'regiao': 'Sul...</msg>
+<arg>${RESPOSTA}</arg>
+<arg>${resposta.json()}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-10-24T20:41:36.076715" elapsed="0.001533"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:35.452644" elapsed="0.625604"/>
+</kw>
+<kw name="Validar Sem Informar Campo Obrigatório 'Consulta Sem Logradouro'" owner="ConsultaResource_api">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-10-24T20:41:36.078248" level="INFO">${body} = {'cep': '91420-270'}</msg>
+<var>${body}</var>
+<arg>cep=91420-270</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-10-24T20:41:36.078248" elapsed="0.000000"/>
+</kw>
+<kw name="Criar sessao da buscaEndereco" owner="ConsultaResource_api">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:36.078248" level="INFO">Creating Session using : alias=buscaEndereco, url=https://viacep.com.br/ws, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=buscaEndereco</arg>
+<arg>url=https://viacep.com.br/ws</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-10-24T20:41:36.078248" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-24T20:41:36.078248" elapsed="0.000000"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2024-10-24T20:41:36.672769" level="INFO">GET Request : url=https://viacep.com.br/ws/RS/Porto%20Alegre/json/ 
+ path_url=/ws/RS/Porto%20Alegre/json/ 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '20', 'Content-Type': 'application/json'} 
+ body=b'{"cep": "91420-270"}' 
+ </msg>
+<msg time="2024-10-24T20:41:36.674475" level="INFO">GET Response : url=https://viacep.com.br/ws/RS/Porto%20Alegre/json/ 
+ status=400, reason=Bad Request 
+ headers={'Server': 'nginx/1.22.0', 'Date': 'Thu, 24 Oct 2024 23:41:32 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '494', 'Connection': 'close', 'ETag': '"6242f812-1ee"', 'Strict-Transport-Security': 'max-age=63072000'} 
+ body=&lt;!DOCTYPE HTML&gt;
+&lt;html lang="pt-br"&gt;
+
+&lt;head&gt;
+  &lt;title&gt;ViaCEP 400&lt;/title&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;style type="text/css"&gt;
+      h1 {
+          color: #555;
+          text-align: center;
+          font-size: 4em;
+      }
+      h2, h3 {
+          color: #666;
+          text-align: center;
+          font-size: 3em;
+      }
+      h3 {
+          font-size: 1.5em;
+      }
+  &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Http 400&lt;/h1&gt;
+    &lt;h3&gt;Verifique a URL&lt;/h3&gt;
+    &lt;h3&gt;{Bad Request}&lt;/h3&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+ 
+ </msg>
+<msg time="2024-10-24T20:41:36.674475" level="INFO">C:\Users\lucas\anaconda3\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'viacep.com.br'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg time="2024-10-24T20:41:36.674475" level="FAIL">HTTPError: 400 Client Error: Bad Request for url: https://viacep.com.br/ws/RS/Porto%20Alegre/json/</msg>
+<var>${resposta}</var>
+<arg>alias=buscaEndereco</arg>
+<arg>url=/RS/Porto Alegre/json/</arg>
+<arg>json=${body}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="FAIL" start="2024-10-24T20:41:36.078248" elapsed="0.603861">HTTPError: 400 Client Error: Bad Request for url: https://viacep.com.br/ws/RS/Porto%20Alegre/json/</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${resposta.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-10-24T20:41:36.683399" elapsed="0.000000"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>400</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="NOT RUN" start="2024-10-24T20:41:36.683399" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Campo obrigatório faltando tratado corretamente</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-10-24T20:41:36.683399" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-24T20:41:36.078248" elapsed="0.605151">HTTPError: 400 Client Error: Bad Request for url: https://viacep.com.br/ws/RS/Porto%20Alegre/json/</status>
+</kw>
+<status status="FAIL" start="2024-10-24T20:41:35.448622" elapsed="1.236378">HTTPError: 400 Client Error: Bad Request for url: https://viacep.com.br/ws/RS/Porto%20Alegre/json/</status>
+</test>
+<status status="FAIL" start="2024-10-24T20:41:32.827072" elapsed="3.860737"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="ConsultaEnderecoApi testing">ConsultaEnderecoApi testing</stat>
+<stat pass="3" fail="1" skip="0" id="s1" name="ConsultaEnderecoApi testing">ConsultaEnderecoApi testing</stat>
 </suite>
 </statistics>
 <errors>

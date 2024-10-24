@@ -9,6 +9,7 @@ ${EXPECTED_CEP}
 ${EXPECTED_LOGRADOURO}  
 ${EXPECTED_UF}
 ${EXPECTED_CIDADE}
+${EXPECTED_ERRO_400}    400
 
 *** Keywords ***
 
@@ -62,6 +63,7 @@ Conferir consulta de endereco
 
 
 Conferir consulta de endereco lista 2
+
         Log To Console    ${RESPOSTA}
         Status Should Be    200
          ${EXPECTED_CEP}    Get From List    ${RESPOSTA}    1
@@ -72,6 +74,25 @@ Conferir consulta de endereco lista 2
 
         ${EXPECTED_UF}    Get From List     ${RESPOSTA}    1
         Dictionary Should Contain Value    ${EXPECTED_UF}    RS
+
+
+
+Validar Tempo de Resposta
+    Criar sessao da buscaEndereco
+    ${resposta}    GET On Session    alias=buscaEndereco    url=/RS/Porto Alegre/Domingos/json/
+    Should Be True    ${resposta.elapsed.total_seconds()} < 2  # Verificando que a resposta é menor que 2 segundos
+    Log To Console    Tempo de resposta dentro do esperado
+
+
+
+Validar Sem Informar Campo Obrigatório 'Consulta Sem Logradouro'
+    ${body}    Create Dictionary    cep=91420-270
+    Criar sessao da buscaEndereco
+    ${resposta}    GET On Session    alias=buscaEndereco    url=/RS/Porto Alegre/json/    json=${body}
+    Log To Console    ${resposta.json()}
+
+    Status Should Be    400  # Erro para requisição malformada
+    Log To Console    Campo obrigatório faltando 
 
 
 
