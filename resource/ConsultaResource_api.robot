@@ -90,6 +90,8 @@ Validar Sem Informar Campo Obrigatório 'Consulta Sem Logradouro'
     Criar sessao da buscaEndereco
     ${resposta}    GET On Session    alias=buscaEndereco    url=/RS/Porto Alegre/json/    json=${body}
     Log To Console    ${resposta.json()}
+    Set Test Variable    ${EXPECTED_ERRO_400}    ${resposta.json()}
+    Dictionary Should Contain Item    ${EXPECTED_ERRO_400}    status    400
 
     Status Should Be    400  # Erro para requisição malformada
     Log To Console    Campo obrigatório faltando 

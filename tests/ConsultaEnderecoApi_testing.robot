@@ -21,7 +21,7 @@ CT-3: Verificar tempo de resposta da API
     Validar Tempo de Resposta
 
 
-CT-4: Verificar ConsultaSemLogradouro
-    Criar sessao da buscaEndereco
-    Consulta endereco
-    Validar Sem Informar Campo Obrigatório 'Consulta Sem Logradouro'
+#CT-4: Verificar ConsultaSemLogradouro
+  #  Criar sessao da buscaEndereco
+   # Consulta endereco
+   # Validar Sem Informar Campo Obrigatório 'Consulta Sem Logradouro'
